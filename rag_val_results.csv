@@ -1,0 +1,55 @@
+reference,prediction
+"sys . path . insert ( 0 , os . path . abspath ( '..' ) )","sys. path. insert ( 0, os. path. abspath ( '..' ) )"
+"import numpy as np
+import matplotlib.pyplot as plt
+def task_func():
+
+    X = np.linspace(-10, 10, 400)
+    Y = X**2
+
+    plt.figure()
+    plt.plot(X, Y)
+    plt.title('y = x^2')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.grid(True)
+    plt.show()","import numpy as np
+import matplotlib.pyplot as plt
+def task_func():
+
+    X = np.linspace(-10, 10, 400)
+    Y = X**2
+
+    plt.figure()
+    plt.plot(X, Y)
+    plt.title('y = x^2')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.grid(True)
+    plt.show()"
+"if isinstance ( field , ( models . ForeignKey , models . OneToOneField ) ) and issubclass ( self . model , field . rel . to ) : fk_name = field . name","if isinstance ( field, models. ForeignKey ) and issubclass ( self. model, field. rel. to ) and field. name : fk_name = field. name"
+"url ( r'^artifacts/puthook$' , 'ppatrigger.views.put_artifacts_hook' , name = 'put_hook' ) ,","url ( r'^artifacts/puthook$', 'ppatrigger.views.put_artifacts_hook', name = 'put_hook' ),"
+"columns [ 8 ] = build_column_9 ( id = polypeptide . id , parent = polypeptide . parent . id , other = assertions )","columns [ 8 ] = build_column_9 ( id = polypeptide. id, parent = mRNA. parent. id, other = [ mRNA. id ] )"
+"cursor_rec . translate ( self . editor . panels . margin_size ( ) - prefix_len , self . editor . panels . margin_size ( 0 ) + 5 )","cursor_rec. translate ( self. editor. panels. margin_size ( ) - prefix_len, self. editor. panels. margin_size ( 0 ), self. editor. panels. margin_size ( ) )"
+"for cell in row . findAll ( 'td' ) : output_rows . append ( cell . text . replace ( '&nbsp;' , '' ) )","for cell in tr. findAll ( 'td' ) : output_rows. append ( cell. text. replace ( '&nbsp;', '' ). strip ( ) )"
+"import random
+import math
+def task_func(LETTERS=[chr(i) for i in range(97, 123)]):
+
+    random_dict = {k: [random.randint(0, 100) for _ in range(random.randint(1, 10))] for k in LETTERS}
+    sd_dict = {
+        k: math.sqrt(sum((i - sum(v) / len(v)) ** 2 for i in v) / len(v))
+        for k, v in random_dict.items()
+    }
+    return sd_dict","import random
+import math
+def task_func(LETTERS=[chr(i) for i in range(97, 123)]):
+
+    random_dict = {k: [random.randint(0, 100) for _ in range(random.randint(1, 10))] for k in LETTERS}
+    sd_dict = {
+        k: math.sqrt(sum((i - sum(v) / len(v)) ** 2 for i in v) / len(v))
+        for k, v in random_dict.items()
+    }
+    return sd_dict"
+sam_cov_filt_basename += '.cov_filt_{0}' . format ( args . coverage_threshold ),sam_cov_filt_basename += '.cov_filt_{0}'. format ( args. cov_thresold )
+"from dagster . core . types . dagster_type import DagsterTypeKind , construct_dagster_type_dictionary","from dagster. core. types. dagster_type import construct_dagster_type_dictionary, DagsterType"
